@@ -1,0 +1,30 @@
+.direction {
+	padding-bottom: 50px;
+}
+
+.direction__row:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.direction__text {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.direction__text_width_490 {
+	max-width: 490px;
+	margin-right: -5px;
+}
+
+.direction__text_width_480 {
+	max-width: 480px;
+	margin-right: 40px;
+}
+
+.direction__img_position_left {
+	margin-right: 30px;
+}
+
+.direction__img_position_right {
+	margin-right: -5px;
+}
