@@ -1,5 +1,5 @@
 .article {
-	padding: 50px 0;/
+	padding: 50px 0;
 }
 
 .article__title {
@@ -8,5 +8,12 @@
 	font-size: 62px;
 	line-height: 73px;
 	margin-bottom: 50px;
+}
+
+.article__subtitle {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
 }
 

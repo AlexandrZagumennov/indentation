@@ -18,10 +18,12 @@
 
 <body>
 	<main>
-		<div class="container">
-			<article class="article">
-				<section class="preamble">
+		<article class="article">
+			<section class="preamble">
+				<div class="container-title">
 					<h1 class="article__title">Отступы в вёрстке: margin и padding</h1>
+				</div>
+				<div class="container">
 					<p class="text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения
 						смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах
 						организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано
@@ -31,9 +33,32 @@
 						их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для
 						более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в
 						вёрстке.</p>
-				</section>
-			</article>
-		</div>
+					<div class="summarize">
+						<h2 class="summarize__title">Подытожим:</h2>
+						<ol class="sum-list">
+							<li class="sum-list__item">
+								Отступ задается от предыдущего элемента к следующему
+							</li>
+							<li class="sum-list__item">
+								Отступ задается последнему возможному элементу в DOM-дереве
+							</li>
+							<li class="sum-list__item">
+								Для последнего элемента группы отступ обнуляется
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section class="direction">
+				<div class="container">
+					<h2 class="article__subtitle">Отступ задается от предыдущего элемента к следующему: от первого ко
+						второму, сверху вниз, слева направо.</h2>
+				</div>
+			</section>
+
+		</article>
+
 	</main>
 </body>
 

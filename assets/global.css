@@ -70,10 +70,14 @@ iframe {
 	overflow: hidden;
 }
 
-.container {
+.container-title {
 	width: 1084px;
 	margin: 0 auto;
-	/*border: 1px solid red;*/
+}
+
+.container {
+	width: 1081px;
+	margin: 0 auto;
 }
 
 
