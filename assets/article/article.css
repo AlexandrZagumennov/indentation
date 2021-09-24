@@ -1,0 +1,12 @@
+.article {
+	padding: 50px 0;/
+}
+
+.article__title {
+	text-align: center;
+	font-weight: 900;
+	font-size: 62px;
+	line-height: 73px;
+	margin-bottom: 50px;
+}
+

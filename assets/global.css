@@ -71,8 +71,12 @@ iframe {
 }
 
 .container {
-	max-width: 1180px;
+	width: 1084px;
 	margin: 0 auto;
+	/*border: 1px solid red;*/
 }
+
+
+
 
 

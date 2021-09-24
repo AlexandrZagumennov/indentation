@@ -1,5 +1,7 @@
 @import url(normalize.css);
 @import url(global.css);
 @import url(fonts.css);
-
-
+/* Подключение стилей блоков */
+@import url(article/article.css);
+@import url(preamble/preamble.css);
+@import url(text/text.css);
