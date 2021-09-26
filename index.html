@@ -33,25 +33,25 @@
 						вёрстке.</p>
 				</div>
 			</section>
-			
+
 			<section class="table-of-contents">
 				<div class="container">
 					<h2 class="table-of-contents__title">Содержание:</h2>
 					<ol class="ol-list">
-						<li class="ol-list__item"> 
+						<li class="ol-list__item">
 							<a href="#direction">
 								Отступ задается от предыдущего элемента к следующему
 							</a>
 						</li>
-						<li class="ol-list__item"> 
-							<a href="#">
+						<li class="ol-list__item">
+							<a href="#indent-last-element">
 								Отступ задается последнему возможному элементу в DOM-дереве
-							</a> 
+							</a>
 						</li>
-						<li class="ol-list__item"> 
+						<li class="ol-list__item">
 							<a href="#">
 								Для последнего элемента группы отступ обнуляется
-							</a> 
+							</a>
 						</li>
 					</ol>
 				</div>
@@ -66,18 +66,24 @@
 							class="direction__img direction__img_position_left"
 							alt="Иллюстрация четырёх блоков с кошками; пример отступов" width="560" height="415">
 						<div class="direction__text direction__text_width_490">
-							<p class="text"><strong>ВАЖНО:</strong> <em>margin</em> всегда задают от предыдущего элемента к следующему.</p>
-							<p class="text">Свойство<em> margin</em> необходимо только для того, чтобы отодвинуть своего соседа
-								справа или снизу, поэтому используется <em>margin-right</em> и <em>margin-bottom</em></p>
-							<p class="text">(!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.</p>
+							<p class="text"><strong>ВАЖНО:</strong> <em>margin</em> всегда задают от предыдущего
+								элемента к следующему.</p>
+							<p class="text">Свойство<em> margin</em> необходимо только для того, чтобы отодвинуть своего
+								соседа
+								справа или снизу, поэтому используется <em>margin-right</em> и <em>margin-bottom</em>
+							</p>
+							<p class="text">(!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне
+								редко.</p>
 							<p class="text">Для <em>padding</em> верно обратное. Исключением является его применения в
 								декоративных целях, например, для увеличения области ссылки.</p>
 						</div>
 					</div>
 					<div class="direction__row">
 						<div class="direction__text direction__text_width_480">
-							<p class="text">Отступ внутри блока сверху или слева реализуется через <em>padding-top</em> и
-								<em>padding-left</em> родителя.</p>
+							<p class="text">Отступ внутри блока сверху или слева реализуется через <em>padding-top</em>
+								и
+								<em>padding-left</em> родителя.
+							</p>
 							<p class="text">Отступы, как правило, делают в направлении от предыдущего элемента к
 								следующему. Так элемент не будет толкать сам себя.</p>
 							<p class="text">Изначально элемент статичен, а его положение может меняться только под
@@ -89,6 +95,46 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="indent-last-element" id="indent-last-element">
+				<div class="container">
+					<h2 class="article__subtitle">Отступ задается последнему возможному элементу в DOM-дереве</h2>
+					<p class="text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для
+						примера, посмотрите на этот список:</p>
+					<img src="assets/indent-last-element/img/image 3indent-last-element-img-1.png"
+						alt="Пример кода применения margin между соседними элементами DOM-дерева" width="1079"
+						height="537" class="indent-last-element__img">
+					<img src="assets/indent-last-element/img/image 4indent-last-element-img-2.png"
+						alt="Пример реализации применения margin между соседними элементами DOM-дерева" width="603"
+						height="449" class="indent-last-element__img">
+					<p class="text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+					<figure class="indent-last-element__figure">
+						<img src="assets/indent-last-element/img/image 5indent-last-element-img-3.png"
+							alt="Пример реализации отступа за счёт соседних элементов">
+						<figcaption class="indent-last-element__figcaption">ВАЖНО: здесь .list-item — последний
+							возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
+					</figure>
+					<p class="text">Казалось бы, можно задать отступ параграфу <em>&lt;p&gt;</em>, либо обёртке
+						<em>&lt;article&gt;</em>
+						для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+					</p>
+					<p class="text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
+					</p>
+					<img src="assets/indent-last-element/img/image 6indent-last-element-img-4.png"
+						alt="Пример кода с вложенностью элементов" class="indent-last-element__img" width="968"
+						height="164">
+					<p class="text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет
+						section. Именно для него задается padding-top, а не div с классом container. Свойства margin,
+						которые стоят по умолчанию необходимо обнулить.</p>
+					<img src="assets/indent-last-element/img/image 7indent-last-element-img-5.png"
+						alt="Пример реализации верхнего отступа заголовка" class="indent-last-element__img" width="1026"
+						height="504">
+					<p class="text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто
+						будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании
+						или выводе вёрстки с нестандартной структурой отступов.</p>
+				</div>
+			</section>
+
 
 		</article>
 
