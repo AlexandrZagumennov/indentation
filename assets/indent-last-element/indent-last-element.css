@@ -1,5 +1,6 @@
 .indent-last-element {
-	margin-bottom: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .indent-last-element__img {

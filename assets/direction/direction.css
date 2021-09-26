@@ -1,5 +1,5 @@
 .direction {
-	margin-bottom: 50px;
+	padding-bottom: 25px;
 }
 
 .direction__row:not(:last-child) {
