@@ -1,5 +1,7 @@
+/* Подключение normalize и глобальных стилей */
 @import url(normalize.css);
 @import url(global.css);
+/* Подключение шрифтов */
 @import url(fonts.css);
 /* Подключение стилей блоков */
 @import url(article/article.css);
@@ -10,3 +12,4 @@
 @import url(direction/direction.css);
 @import url(indent-last-element/indent-last-element.css);
 @import url(last-element-margin-reset/last-element-margin-reset.css);
+@import url(total/total.css);

@@ -1,8 +1,0 @@
-.ol-list {
-	padding-inline-start: 25px;
-	margin: 0;
-}
-
-.ol-list__item:not(:last-child) {
-	margin-bottom: 10px;
-}
