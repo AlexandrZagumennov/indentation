@@ -7,4 +7,4 @@
 @import url(text/text.css);
 @import url(table-of-contents/table-of-contents.css);
 @import url(ol-list/ol-list.css);
-/*@import url(direction/direction.css);*/
+@import url(direction/direction.css);

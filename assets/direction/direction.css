@@ -1,5 +1,5 @@
 .direction {
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .direction__row:not(:last-child) {
@@ -12,8 +12,9 @@
 }
 
 .direction__text_width_490 {
-	max-width: 490px;
-	margin-right: -5px;
+	width: 490px;
+	margin-left: -5px;
+
 }
 
 .direction__text_width_480 {
