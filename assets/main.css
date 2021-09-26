@@ -5,6 +5,6 @@
 @import url(article/article.css);
 @import url(preamble/preamble.css);
 @import url(text/text.css);
-@import url(summarize/summarize.css);
-@import url(sum-list/sum-list.css);
-@import url(direction/direction.css);
+@import url(table-of-contents/table-of-contents.css);
+@import url(ol-list/ol-list.css);
+/*@import url(direction/direction.css);*/
