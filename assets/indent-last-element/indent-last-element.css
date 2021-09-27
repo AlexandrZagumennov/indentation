@@ -8,6 +8,10 @@
 	margin: 0 auto 30px auto;
 }
 
+.indent-last-element__img_figure{
+	margin-bottom: 0;
+}
+
 .indent-last-element__figure {
 	margin-bottom: 15px;
 }
