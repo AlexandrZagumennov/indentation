@@ -14,19 +14,13 @@
 
 .direction__text_width_490 {
 	width: 490px;
-	margin-left: -5px;
-
 }
 
 .direction__text_width_480 {
 	max-width: 480px;
-	margin-right: 40px;
+	margin-right: 35px;
 }
 
 .direction__img_position_left {
-	margin-right: 30px;
-}
-
-.direction__img_position_right {
-	margin-right: -5px;
+	margin-right: 25px;
 }
